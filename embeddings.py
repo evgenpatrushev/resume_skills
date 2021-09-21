@@ -274,8 +274,6 @@ def test_embeddings(emb_matrix, word_to_ind, ind_to_word, triplets=None):
 
 def create_embeddings(df, run_test=True, test_triplets=None):
     def get_window(sentence, window_size):
-        pairs = []
-
         """
         Iterate over all the sentences
         Take all the words from [i - window_size) to (i + window_size] and save them to pairs
